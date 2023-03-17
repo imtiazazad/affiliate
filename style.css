@@ -1,0 +1,446 @@
+/* Default styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.Header {
+  background-color: #003c3f;
+}
+
+.rightPH{
+  /* margin-top: -10px; */
+}
+.HeaderPH h2 {
+  text-align: center;
+  font-weight: 900;
+  color: #ddd;
+  font-size: 24px;
+}
+
+.HeaderPH p {
+  font-weight: 100;
+  color: #ddd;
+  font-family: initial;
+  font-size: 22px;
+  line-break: unset;
+  line-height: 28px;
+  text-align: start;
+}
+
+.NavBar {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  background-color: #02686dc7;
+  width: 100%;
+}
+
+.container {
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.navWrap {
+  padding-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav ul .button {
+  padding-left: 20px;
+  list-style: none;
+}
+
+.nav ul .ancor {
+  list-style-type: none;
+}
+
+.nav ul .ancor a {
+  text-decoration: none;
+  color: antiquewhite;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.nav ul .ancor a:hover {
+  text-decoration: none;
+  background-color: #4a4a4a;
+  border-color: transparent;
+  color: #fff;
+  border-radius: 3px;
+  padding: 15px 23px 15px 23px;
+}
+
+.nav ul .button a {
+  text-decoration: none;
+  background-color: #f14668;
+  border-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  border-radius: 3px;
+  padding: 13px 21px 13px 21px;
+}
+
+.nav ul .button a:hover {
+  background-color: #ee3459b8;
+}
+
+.button li {
+  background-color: #ffff00bd;
+  display: inline-flex;
+  text-align: center;
+  margin-left: 280px;
+  padding: 2px 175px;
+}
+
+.button li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+
+.buttonContent {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.buttonContent p {
+  font-weight: 900;
+  text-align: start;
+  color: azure;
+  padding: 8px;
+  font-size: 18px;
+}
+
+
+.HeadContent img {
+  width: 350px;
+}
+
+.capsule h3 {
+  color: white;
+  text-align: center;
+}
+
+.capsule p {
+  text-align: center;
+  color: white;
+}
+
+.capsuleProducts img {
+  width: 200px;
+  height: 200px;
+}
+
+.capsules h1 {
+  font-family: emoji;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0px;
+  color: yellow;
+  font-weight: bolder;
+}
+
+.capsules p {
+  font-size: 13px;
+  text-align: center;
+  margin-top: -16px;
+  color: white;
+}
+
+.capsuleProducts span {
+  grid-column-gap: 0px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.capsuleProducts span img {
+  padding: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+.capsuleProducts span p {
+  font-family: -webkit-body;
+  font-size: 16px;
+  line-height: 0px;
+  color: white;
+}
+
+.navLogo img {
+  width: 75px;
+}
+
+.capsuleProducts {
+  gap: 100px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+}
+
+.capsule {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(112.1deg, rgb(17 21 31 / 61%) 11.4%, rgb(0 0 0 / 90%) 70.2%)
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+  .navLogo img {
+    width: 50px;
+  }
+
+  .HeadContent img {
+    width: 200px;
+  }
+
+  .HeaderPH p {
+    text-align: center;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 100;
+  }
+
+  .nav ul .ancor a {
+    font-size: 15px;
+    font-family: cursive;
+  }
+
+  .navWrap {
+    justify-content: space-around;
+  }
+
+  .nav ul .button a {
+    background: none;
+    padding: 0px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+  }
+
+  .nav ul .button {
+    padding: 0px;
+  }
+
+  .buttonContent {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .buttonContent p {
+    font-size: 17px;
+    text-align: center;
+    font-weight: 100;
+    font-family: sans-serif;
+  }
+
+  .HeadContent {
+    background: #003c3f;
+    margin-top: 0px;
+    padding: 68px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    text-align: center;
+  }
+
+  .button li a {
+    font-size: 15px;
+    margin-top: 0px;
+  }
+
+  .capsuleProducts {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  .capsuleBG {
+    padding: 10px 2px;
+    background-color: #003c3f;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000000;
+  }
+
+  .capsuleProducts span p {
+    font-size: 15px;
+  }
+
+  .button li {
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    padding: 5px 0px 5px 0px;
+    justify-content: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) {
+  .navWrap {
+    justify-content: space-around;
+  }
+
+  .navLogo img {
+    width: 70px;
+  }
+
+  .nav ul .ancor a {
+    font-size: 20px;
+    font-family: cursive;
+  }
+
+  .nav ul .button a {
+    font-size: 20px;
+    font-family: cursive;
+
+  }
+
+  .HeadContent img {
+    width: 200px;
+  }
+
+  .HeadContent {
+    background: #003c3f;
+    margin-top: 0px;
+    padding: 125px 0px 20px 10px;    
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    gap: 10px;
+    text-align: center;
+  }
+
+  .capsuleBG {
+    background-color: #003c3f;
+    border-radius: 10px;
+    padding: 10px 2px;
+    box-shadow: 5px 5px 15px #000000;
+  }
+
+  .capsuleProducts {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px;
+  }
+
+  .button li {
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+  }
+
+  .button li img {
+    margin-left: 10px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navLogo img {
+    width: 100px;
+  }
+
+  .HeadContent img {
+    width: 350px;
+  }
+
+  .nav ul .ancor a {
+    font-size: 20px;
+  }
+
+  .nav ul .button a {
+    font-size: 20px;
+  }
+
+  .capsuleProducts {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+  }
+
+  .HeadContent {
+    background: #003c3f;
+    margin-top: 0px;
+    padding: 125px 0px 20px 10px;    
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    gap: 0px;
+    text-align: center;
+  }
+
+  .capsuleBG {
+    background-color: #003c3f;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000000;
+  }
+
+  .button li img {
+    margin-left: 10px;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .navLogo img {
+    width: 130px;
+  }
+
+  .capsuleProducts {
+    grid-template-columns: repeat(3, 3fr);
+  }
+
+  .HeadContent {
+        max-width: 1200px;
+    margin: 0 auto;
+    background: #003c3f;
+    margin-top: 0px;
+    padding: 200px 10px 50px 10px;    
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 0px;
+  }
+
+  .capsuleBG {
+    background-color: #003c3f;
+    padding: 10px 2px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000000;
+
+  }
+
+  .button li {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0px;
+  }
+
+  .nav ul .ancor a {
+    font-size: 28px;
+  }
+
+  .nav ul .button a {
+    font-size: 25px;
+  }
+
+  .navWrap {
+    padding: 7px;
+    justify-content: space-between;
+  }
+
+  .button li img {
+    margin-left: 10px;
+  }
+}
